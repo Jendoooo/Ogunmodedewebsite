@@ -5,24 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
     <title>Ogunmodede Website</title>
 </head>
 <body>
-    <nav>
-        <p>OgunmodedeCollege</p>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src=" "></a>
+            <!-- <p>OgunmodedeCollege</p> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Contact Us </a></li>
+                    <li><a href="#">Register</a></li>
+                
+                </ul>
+        
+            </div>
+            <i class="fa fa-bars" onclick = "showMenu()"></i>
+        </nav>
+        
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Students</a></li>
-            <li><a href="#">Contact Us </a></li>
-            <li><a href="#">Register</a></li>
-           
-        </ul>
-    </nav>
+        <main>
 
-    <main>
+            <div class="text-box">
+                <h1> Lagos'Premier Secondary School </h1>
+                <p>Established a long time ago to achieve excellence in Education</p>
+                <a href="" class="hero-btn" ondblclick="pomo()">Visit us to know more </a>
+            </div>
+       
+        </main>
+    </section>
+
+    <section class="courses">
+        <div class="main">
+            <h1>Courses We Offer</h1>
+            <p>For over 40 years, we have offered the following courses with high pass rate of our students</p>
+        </div>
+
+        <div class="core">
+            <div class="subject" id="html">
+                <h1>HTML</h1>
+                <p>For the begineers in introductory classes we have introduced foundational classes in the knowledge of the most popular markup language HTML.</p>
+            </div>
+            <div class="subject" id="css">
+                <h1>CSS</h1>
+                <p>Upon successful completion of the introductory HTML course, we give a sneek peek into the world of Cacading Style Sheet. Here in , they learn how to style the simple HTML documents they learnt in earlier classes as well as make responsive designs to suite the need of end-users. At the end , they make a static and responsive website as a capstone project. </p>
+            </div>
+            <div class="subject" id="JavaScript">
+                <h1>JavaScript</h1>
+                <p>As the knowledge of static website has been passed down to our students, we raise it up a notch by introducing them to the scripting language , JavaScript revered as the world's most popular language.
+                By the end of the classes, they are ready to take on a path to a succesfull career as a Front End Developer.
+                </p>
+            </div>
+
+        </div>
+
+
+    </section>
    
-    </main>
+
+
+<!---------------JavaScript for togglre Menu ----------------->
+
+<script>
+    // var navLinks = documents.getElementById("navLinks")
+  
+    // function showMenu(){
+                        
+    //     navLinks.style.right ="0"
+    // }
+    // function hideMenu(){
+    //     navLinks.style.right ="-200px"
+    // }
+
+
+
+    
+</script>
+
+
 </body>
 </html>
