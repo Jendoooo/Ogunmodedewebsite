@@ -157,32 +157,37 @@ nav .fa{
 
 #html,#css,#JavaScript{
     margin-top: 50px;
+    margin-bottom: 5%;
     float: left;
-    width: 30%;
+    max-width: 30%;
     display: block;
     text-align: center;
     border: 2px solid slategray;
-    padding: 5px 10px;
-    color: white;
+    padding: 20px 12px;
+    color: black;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+
     height: 290px;
-    background-color: #f44336;
+    background-color: #fff3f3;
+    box-sizing: content-box
 }
 
 #html:hover,#css:hover,#JavaScript:hover{
 
-    background-color: #222;
-    transition: 1s;
-    font-weight: bold;
-    cursor: pointer;
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.2);
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600px;
+    margin: 10px 0 ;
 }
 
 
 
 
-
-@media(max-width:700px){
+@media(max-width:900px){
     .text-box h1{
         font-size: 20px;
     }
@@ -245,4 +250,34 @@ nav .fa{
         padding: 10px;
     }
 
+    .core{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    #html,#css,#JavaScript{
+        margin: auto;
+        max-width: 70%;
+        margin-top: 5%;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .main{
+        font-size: 0.5em;
+    }
+
+    
+#html:hover,#css:hover,#JavaScript:hover{
+
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.2);
+}
+
+
     } 
+
+
+
